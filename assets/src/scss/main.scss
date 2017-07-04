@@ -15,5 +15,10 @@
 // @import "_6_pieces/pieces";
 // @import "_7_pages/pages";
 
+// // imports
+@import "bower_components/bourbon/app/assets/stylesheets/bourbon";
+@import "bower_components/neat/app/assets/stylesheets/neat";
 
+
+// stylesheet
 @import "_styles/site-styles";

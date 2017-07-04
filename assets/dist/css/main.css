@@ -3,6 +3,45 @@
 \*------------------------------------*/
 /*------------------------------------*    #IMPORTS
 \*------------------------------------*/
+html {
+  box-sizing: border-box; }
+
+*, *::after, *::before {
+  box-sizing: inherit; }
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, .text--small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote::before, blockquote::after {
+  content: "";
+  content: none; }
+
+q::before, q::after {
+  content: "";
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.site__header {
+  background-color: #CA0000;
+  height: 100px; }
+
 .logo {
   background: url("../../../assets/dist/img/logo-mobile.png") no-repeat;
   background-size: 45%;
@@ -24,16 +63,23 @@ nav {
     text-align: center; }
 
 .hero__image {
-  background-color: #71CCC1; }
-
-.nav__mobile-trigger {
-  background-color: #CA0000;
-  height: 50px;
-  width: 50px;
-  display: block; }
-
-#nav-icon {
-  fill: #CA0000; }
+  background: url("../../../assets/dist/img/chicken.jpg") no-repeat center 50%;
+  background-size: cover;
+  background-color: #71CCC1;
+  height: 200px;
+  position: relative; }
+  @media screen and (min-width: 720px) {
+    .hero__image {
+      height: 250px; } }
+  @media screen and (min-width: 1024px) and (orientation: landscape) {
+    .hero__image {
+      height: 300px; } }
+  .hero__image h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%); }
 
 .image__section {
   height: 200px;
@@ -92,11 +138,6 @@ body {
 .container {
   margin: 15px; }
 
-.site__header {
-  clear: both;
-  display: block;
-  background-color: #71CCC1; }
-
 .page__section {
   clear: both;
   display: block;
@@ -120,6 +161,223 @@ body {
 
 .link--secondary {
   color: #FFFFFF; }
+
+.row {
+  display: block; }
+  .row::after {
+    clear: both;
+    content: "";
+    display: block; }
+
+@media screen and (min-width: 320px) {
+  .columns-1__s {
+    float: left;
+    display: block;
+    margin-right: 8.57143%;
+    width: 18.57143%; }
+    .columns-1__s:last-child {
+      margin-right: 0; }
+  .columns-2__s {
+    float: left;
+    display: block;
+    margin-right: 8.57143%;
+    width: 45.71429%; }
+    .columns-2__s:last-child {
+      margin-right: 0; }
+  .columns-3__s {
+    float: left;
+    display: block;
+    margin-right: 8.57143%;
+    width: 72.85714%; }
+    .columns-3__s:last-child {
+      margin-right: 0; } }
+
+@media screen and (min-width: 320px) {
+  .offset-1__s {
+    margin-left: 27.14286%; }
+  .offset-2__s {
+    margin-left: 54.28571%; }
+  .offset-3__s {
+    margin-left: 81.42857%; } }
+
+@media screen and (min-width: 720px) {
+  .columns-1__m {
+    float: left;
+    display: block;
+    margin-right: 3.63636%;
+    width: 7.87879%; }
+    .columns-1__m:last-child {
+      margin-right: 0; }
+  .columns-2__m {
+    float: left;
+    display: block;
+    margin-right: 3.63636%;
+    width: 19.39394%; }
+    .columns-2__m:last-child {
+      margin-right: 0; }
+  .columns-3__m {
+    float: left;
+    display: block;
+    margin-right: 3.63636%;
+    width: 30.90909%; }
+    .columns-3__m:last-child {
+      margin-right: 0; }
+  .columns-4__m {
+    float: left;
+    display: block;
+    margin-right: 3.63636%;
+    width: 42.42424%; }
+    .columns-4__m:last-child {
+      margin-right: 0; }
+  .columns-5__m {
+    float: left;
+    display: block;
+    margin-right: 3.63636%;
+    width: 53.93939%; }
+    .columns-5__m:last-child {
+      margin-right: 0; }
+  .columns-6__m {
+    float: left;
+    display: block;
+    margin-right: 3.63636%;
+    width: 65.45455%; }
+    .columns-6__m:last-child {
+      margin-right: 0; }
+  .columns-7__m {
+    float: left;
+    display: block;
+    margin-right: 3.63636%;
+    width: 76.9697%; }
+    .columns-7__m:last-child {
+      margin-right: 0; }
+  .columns-8__m {
+    float: left;
+    display: block;
+    margin-right: 3.63636%;
+    width: 88.48485%; }
+    .columns-8__m:last-child {
+      margin-right: 0; } }
+
+@media screen and (min-width: 720px) {
+  .offset-1__m {
+    margin-left: 11.51515%; }
+  .offset-2__m {
+    margin-left: 23.0303%; }
+  .offset-3__m {
+    margin-left: 34.54545%; }
+  .offset-4__m {
+    margin-left: 46.06061%; }
+  .offset-5__m {
+    margin-left: 57.57576%; }
+  .offset-6__m {
+    margin-left: 69.09091%; }
+  .offset-7__m {
+    margin-left: 80.60606%; }
+  .offset-8__m {
+    margin-left: 92.12121%; } }
+
+@media screen and (min-width: 1024px) and (orientation: landscape) {
+  .columns-1__l {
+    float: left;
+    display: block;
+    margin-right: 2.7027%;
+    width: 5.85586%; }
+    .columns-1__l:last-child {
+      margin-right: 0; }
+  .columns-2__l {
+    float: left;
+    display: block;
+    margin-right: 2.7027%;
+    width: 14.41441%; }
+    .columns-2__l:last-child {
+      margin-right: 0; }
+  .columns-3__l {
+    float: left;
+    display: block;
+    margin-right: 2.7027%;
+    width: 22.97297%; }
+    .columns-3__l:last-child {
+      margin-right: 0; }
+  .columns-4__l {
+    float: left;
+    display: block;
+    margin-right: 2.7027%;
+    width: 31.53153%; }
+    .columns-4__l:last-child {
+      margin-right: 0; }
+  .columns-5__l {
+    float: left;
+    display: block;
+    margin-right: 2.7027%;
+    width: 40.09009%; }
+    .columns-5__l:last-child {
+      margin-right: 0; }
+  .columns-6__l {
+    float: left;
+    display: block;
+    margin-right: 2.7027%;
+    width: 48.64865%; }
+    .columns-6__l:last-child {
+      margin-right: 0; }
+  .columns-7__l {
+    float: left;
+    display: block;
+    margin-right: 2.7027%;
+    width: 57.20721%; }
+    .columns-7__l:last-child {
+      margin-right: 0; }
+  .columns-8__l {
+    float: left;
+    display: block;
+    margin-right: 2.7027%;
+    width: 65.76577%; }
+    .columns-8__l:last-child {
+      margin-right: 0; }
+  .columns-9__l {
+    float: left;
+    display: block;
+    margin-right: 2.7027%;
+    width: 74.32432%; }
+    .columns-9__l:last-child {
+      margin-right: 0; }
+  .columns-10__l {
+    float: left;
+    display: block;
+    margin-right: 2.7027%;
+    width: 82.88288%; }
+    .columns-10__l:last-child {
+      margin-right: 0; }
+  .columns-11__l {
+    float: left;
+    display: block;
+    margin-right: 2.7027%;
+    width: 91.44144%; }
+    .columns-11__l:last-child {
+      margin-right: 0; } }
+
+@media screen and (min-width: 1024px) and (orientation: landscape) {
+  .offset-1__l {
+    margin-left: 8.55856%; }
+  .offset-2__l {
+    margin-left: 17.11712%; }
+  .offset-3__l {
+    margin-left: 25.67568%; }
+  .offset-4__l {
+    margin-left: 34.23423%; }
+  .offset-5__l {
+    margin-left: 42.79279%; }
+  .offset-6__l {
+    margin-left: 51.35135%; }
+  .offset-7__l {
+    margin-left: 59.90991%; }
+  .offset-8__l {
+    margin-left: 68.46847%; }
+  .offset-9__l {
+    margin-left: 77.02703%; }
+  .offset-10__l {
+    margin-left: 85.58559%; }
+  .offset-11__l {
+    margin-left: 94.14414%; } }
 
 html {
   -ms-text-size-adjust: 100%;

@@ -1,12 +1,17 @@
 // Variables
 
-
+$hero-image: url('../../../assets/dist/img/chicken.jpg') no-repeat center 50%;
 
 
 
 // Structure
 
 // header
+.site__header {
+  background-color: $red-base;
+  height: 100px;
+}
+
 .logo {
   background: url('../../../assets/dist/img/logo-mobile.png') no-repeat;
   background-size: 45%;
@@ -33,25 +38,28 @@ nav {
     }
 }
 
-.hero__image {
-  background-color: $green-base;
-}
-
-.nav__mobile-trigger {
-  // background-image: url('../../../assets/dist/img/icons/icon-menu.svg');
-  // display: inline-block;
-  background-color: $red-base;
-  height: 50px;
-  width: 50px;
-  display: block;
-
-}
-
-  #nav-icon {
-    fill: $red-base;
-  }
 
 // Page sections
+.hero__image {
+  background: $hero-image;
+  background-size: cover;
+  background-color: $green-base;
+  height: 200px;
+  position: relative;
+
+  @include media($medium) {
+    height: 250px;
+  }
+
+  @include media($large) {
+    height: 300px;
+  }
+
+  h1 {
+    @include center;
+  }
+}
+
 .image__section {
   height: 200px;
   background-color: $green-base;

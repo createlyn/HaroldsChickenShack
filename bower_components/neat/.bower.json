@@ -1,21 +1,22 @@
 {
   "name": "neat",
   "description": "A lightweight, semantic grid framework",
-  "version": "2.1.0",
-  "main": "core/_neat.scss",
+  "version": "1.9.0",
+  "main": "app/assets/stylesheets/_neat.scss",
   "license": "MIT",
   "ignore": [
     "**/.*",
-    "bin",
-    "bin",
     "CONTRIBUTING.md",
     "Gemfile",
     "Gemfile.lock",
-    "lib",
-    "neat.gemspec",
     "NEWS.md",
     "Rakefile",
-    "spec"
+    "bin",
+    "lib",
+    "neat.gemspec",
+    "sache.json",
+    "spec",
+    "test"
   ],
   "keywords": [
     "columns",
@@ -37,14 +38,13 @@
     "type": "git",
     "url": "https://github.com/thoughtbot/neat.git"
   },
-  "_release": "2.1.0",
+  "_release": "1.9.0",
   "_resolution": {
     "type": "version",
-    "tag": "v2.1.0",
-    "commit": "b0405a5f5734df0964d1531a0d354a48ed90edc9"
+    "tag": "v1.9.0",
+    "commit": "657457055865cd720d2d0d3112719f0bb4b27c33"
   },
   "_source": "https://github.com/thoughtbot/neat.git",
-  "_target": "^2.1.0",
-  "_originalSource": "neat",
-  "_direct": true
+  "_target": "^1.7.0",
+  "_originalSource": "neat"
 }

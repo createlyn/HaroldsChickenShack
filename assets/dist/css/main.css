@@ -79,15 +79,17 @@ nav {
             transform: translate(-50%, -50%); }
 
 .image__section {
-  background-color: #71CCC1; }
+  background-color: #71CCC1;
+  display: -ms-flexbox;
+  display: flex; }
 
 .image-list {
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   list-style-type: none; }
   .image-list__item {
     height: 150px;
@@ -102,44 +104,65 @@ nav {
 
 .blog__preview {
   list-style-type: none;
-  margin: 0;
-  padding: 0; }
+  margin: auto;
+  padding: 0;
+  display: block; }
 
 .blog__preview-item {
   list-style: none;
-  margin-top: 40px; }
+  margin-top: 40px;
+  background-color: #CA0000; }
+  @media screen and (min-width: 720px) {
+    .blog__preview-item {
+      display: inline-block; } }
 
 .blog__image {
-  height: 200px;
-  width: 220px;
-  background-color: #F2A74A;
-  display: block; }
+  display: none; }
+  @media screen and (min-width: 720px) {
+    .blog__image {
+      height: 200px;
+      width: 220px;
+      background-color: #71CCC1;
+      display: block;
+      margin: 15px 0; } }
 
 .blog__preview-content {
   margin-bottom: 50px; }
 
 footer {
-  padding: 30px 0; }
+  clear: both;
+  padding: 30px 0;
+  background-color: #71CCC1; }
+
+.footer__container {
+  height: 300px;
+  background-color: #1C0728; }
 
 .footer__connect {
   background-color: #F2A74A;
-  padding: 30px 0; }
+  padding: 30px 0;
+  height: 100%;
+  vertical-align: top; }
+  @media screen and (min-width: 720px) {
+    .footer__connect {
+      width: 49.5%;
+      display: inline-block; } }
 
-@media (min-width: 800px) {
-  .site-navigation {
-    display: inline-block; }
-    .site-navigation__item {
-      font-style: "museo-sans-condensed", "Helvetica", sans-serif;
-      display: inline-block;
-      padding: 20px; } }
+.footer__location {
+  margin: 30px auto;
+  background-color: #FFFFFF;
+  width: 50%;
+  height: 100%;
+  vertical-align: top; }
+  @media screen and (min-width: 720px) {
+    .footer__location {
+      display: inline-block; } }
 
-.nav__mobile-trigger {
-  display: none; }
-
-@media (min-width: 1000px) {
-  .logo {
-    background: url("../../../assets/dist/img/logo-horizontal.png") no-repeat;
-    background-size: 85%; } }
+.footer__logo {
+  height: 100px;
+  width: 75px;
+  background-color: #1C0728;
+  margin: auto; }
 
 body {
   margin: 0; }

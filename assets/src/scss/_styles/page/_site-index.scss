@@ -51,19 +51,30 @@ nav {
     height: 250px;
   }
 
-  @include media($large) {
-    height: 300px;
-  }
-
   h1 {
     @include center;
   }
 }
 
 .image__section {
-  height: 200px;
   background-color: $green-base;
 }
+
+.image-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  list-style-type: none;
+
+  &__item {
+    height: 150px;
+    width: 150px;
+    background-color: $red-base;
+    // display: inline-block;
+
+  }
+}
+
 
 .blog__section {
   background-color: $purple-dark;

@@ -2,15 +2,21 @@
 // reset
 @import "reset";
 
-// mixins
+// Global
+@import "variables/colors";
+@import "variables/spacers";
+@import "variables/typography";
+
+// Variables
+@import "variables/colors";
+@import "variables/button";
+@import "variables/grid";
+@import "variables/spacers";
+@import "variables/typography";
+
+// Mixins
+@import "mixins/button";
 @import "mixins/grid";
 @import "mixins/misc";
 @import "mixins/typography";
 
-
-
-// variables
-@import "variables/colors";
-@import "variables/grid";
-@import "variables/spacers";
-@import "variables/typography";

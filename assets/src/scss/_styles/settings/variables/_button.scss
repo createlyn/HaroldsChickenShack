@@ -1,0 +1,40 @@
+// Buttons Variables
+// ========================================
+
+// Buttons Standard
+$buttons: (
+  'primary': (
+    background-color: $purple-dark,
+    color: $white-base
+  ),
+  'secondary': (
+    background-color: $orange-base,
+    color: $white-base
+  ),
+  'tertiary': (
+    background-color: $green-base,
+    color: $white-base
+  )
+);
+
+// Button Sizes
+$button-sizes: (
+  'tiny': (
+    display: null,
+    font-size: $s-hotel,
+    padding: 6px $spacer-delta,
+    width: null
+  ),
+  'small': (
+    display: null,
+    font-size: $s-golf,
+    padding: 8px $spacer-delta,
+    width: null
+  ),
+  'full': (
+    display: null,
+    font-size: null,
+    padding: null,
+    width: 100%
+  )
+);

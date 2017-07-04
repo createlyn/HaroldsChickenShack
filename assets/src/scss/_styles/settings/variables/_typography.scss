@@ -1,0 +1,61 @@
+// Typography Variables
+// ========================================
+
+// Font Family
+$primary-font-condensed: "museo-sans-condensed", "Helvetica", sans-serif;
+$secondary-font: "museo-sans", "Helvetica", sans-serif;
+
+// Font Sizes
+$font-size-base: 14px;
+
+$s-giga:    100px;
+$s-mega:    65px;
+
+$s-alpha:   36px;
+$s-bravo:   27px;
+$s-charlie: 20px;
+$s-delta:   18px;
+$s-echo:    16px;
+$s-foxtrot: 15px;
+$s-golf:    $font-size-base;
+$s-hotel:   12px;
+
+// Line Heights
+$base-line-height: $font-size-base * 1.5;
+$base-line-small:  $font-size-base;
+$base-line-medium: $font-size-base * 2;
+$base-line-large: $font-size-base * 2.5;
+
+// Letter Spacing
+$l-alpha:    5px;
+$l-bravo:    3px;
+$l-charlie:  2px;
+$l-delta:    1.5;
+$l-echo:     1.33px;
+$l-foxtrot:  1px;
+$l-golf:     0.75px;
+$l-hotel:    0.5px;
+
+// Text Alignment
+$text-align-center:  center;
+$text-align-left:    left;
+$text-align-justify: justify;
+$text-align-right:   right;
+
+// Text Alignment List
+$text-alignments: (
+  center    $text-align-center,
+  left      $text-align-left,
+  justify   $text-align-justify,
+  right     $text-align-right
+);
+
+// Text Transforms
+$text-transform-capitalize:   capitalize;
+$text-transform-uppercase:    uppercase;
+
+// Text Transforms List
+$text-transforms: (
+  capitalize   $text-transform-capitalize,
+  uppercase    $text-transform-uppercase
+);

@@ -1,0 +1,33 @@
+// Page Guide Stylesheet
+// ========================================
+
+// Structure
+body {
+  margin: 0;
+}
+
+.container {
+  margin: $spacer-echo;
+}
+
+.site__header {
+  clear: both;
+  display: block;
+  background-color: $green-base;
+  // margin: $spacer-echo;
+}
+
+.page__section {
+  clear: both;
+  display: block;
+  margin: 0 0 $spacer-delta;
+  padding: $spacer-delta;
+}
+
+
+// fix
+
+.button {
+  border: 2px solid $green-base;
+  padding: $spacer-hotel $spacer-charlie
+}

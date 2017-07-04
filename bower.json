@@ -13,8 +13,11 @@
     "tests"
   ],
   "devDependencies": {
-    "jquery.fitvids": "fitvids#^1.1.0",
     "normalize-scss": "^3.0.3",
     "jquery": "^3.2.1"
+  },
+  "dependencies": {
+    "bourbon": "^4.3.4",
+    "neat": "^2.1.0"
   }
 }

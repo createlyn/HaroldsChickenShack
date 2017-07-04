@@ -1,0 +1,146 @@
+// Variables
+
+
+
+
+
+// Structure
+
+// header
+.logo {
+  background: url('../../../assets/dist/img/logo-mobile.png') no-repeat;
+  background-size: 45%;
+  width: 400px;
+  height: 100px;
+  margin-top: $spacer-echo;
+  display: inline-block;
+  float: left;
+}
+
+nav {
+  display: inline-block;
+  float: right;
+}
+
+.site-navigation {
+    display: block;
+
+    &__item {
+      // font-style: $primary-font-condensed;
+      list-style-type: none;
+      display: none;
+      text-align: center;
+    }
+}
+
+.hero__image {
+  background-color: $green-base;
+}
+
+.nav__mobile-trigger {
+  // background-image: url('../../../assets/dist/img/icons/icon-menu.svg');
+  // display: inline-block;
+  background-color: $red-base;
+  height: 50px;
+  width: 50px;
+  display: block;
+
+}
+
+  #nav-icon {
+    fill: $red-base;
+  }
+
+// Page sections
+.image__section {
+  height: 200px;
+  background-color: $green-base;
+}
+
+.blog__section {
+  background-color: $purple-dark;
+  color: $white-base;
+
+   h3, p, a {
+    color: $white-base;
+  }
+}
+
+.blog__preview {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.blog__preview-item {
+  list-style: none;
+  margin-top: $spacer-bravo;
+}
+
+.blog__image {
+  height: 200px;
+  width: 220px;
+  background-color: $orange-base;
+  display: block;
+}
+
+.blog__preview-content {
+  margin-bottom: $spacer-alpha;
+}
+
+// footer
+footer {
+  padding: $spacer-charlie 0;
+}
+.footer__connect {
+  background-color: $orange-base;
+  padding: $spacer-charlie 0;
+}
+
+
+
+
+
+
+
+
+// TABLET
+@media (min-width: 800px) {
+  .logo {
+
+  }
+
+  .site-navigation {
+    display: inline-block;
+
+    &__item {
+      font-style: $primary-font-condensed;
+      display: inline-block;
+      padding: $spacer-delta;
+    }
+  }
+}
+
+.nav__mobile-trigger {
+  display: none;
+  }
+
+
+
+
+
+
+
+
+
+
+
+// DESKTOP
+
+@media (min-width: 1000px) {
+  .logo {
+    // background-color: $green-base;
+    background: url('../../../assets/dist/img/logo-horizontal.png') no-repeat;
+    background-size: 85%;
+  }
+}

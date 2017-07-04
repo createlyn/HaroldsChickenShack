@@ -49,7 +49,7 @@ gulp.task('styles', function() {
 			includePaths: ['bower_components']
 		}) )
 		.pipe(prefix("last 2 versions"))
-		.pipe(minifyCSS())
+		// .pipe(minifyCSS())
 		.pipe(gulp.dest('assets/dist/css'))
 		.pipe(size())
 		.pipe(notify("SASS finished compiling"))
@@ -109,14 +109,16 @@ gulp.task('clean', function() {
 // BROWSER SYNC
 gulp.task('serve', ['styles'], function() {
     browserSync.init({
-		open: 'external',
-		host: 'projectname.dev',
-        proxy: 'projectname.dev',
-		ghostMode: {
-			clicks: true,
-			forms: true,
-			scroll: true
-		}
+      server: '.',
+      // directory: true,
+		//open: 'external',
+		// host: 'HaroldsChickenShack.dev',
+  //       proxy: 'HaroldsChickenShack.dev',
+		// ghostMode: {
+		// 	clicks: true,
+		// 	forms: true,
+		// 	scroll: true
+		// }
     });
 });
 
@@ -129,17 +131,24 @@ gulp.task('watch', ['serve', 'styles'], function() {
     // Watch .scss files
     gulp.watch('assets/src/scss/**/*.scss', ['styles']);
 
+    // Watch .scss files
+    gulp.watch('styles/main.scss', ['styles']);
+
     // Watch .js files
     gulp.watch('assets/src/js/**/*.js', ['scripts']);
 
     // Watch image files
     gulp.watch('assets/src/img/*', ['img']);
 
-	// Browser Sync for PHP
+     // Reload on PHP changes
     gulp.watch("./*.php").on('change', browserSync.reload);
+
+	   // Reload on HTML changes
+    gulp.watch("./*.html").on('change', browserSync.reload);
 });
 
+gulp.task('build', ['sprites', 'styles', 'scripts', 'img', 'fonts']);
 
 gulp.task('default', function() {
-	gulp.start('sprites', 'styles', 'scripts', 'img', 'fonts', 'watch', 'clear', 'serve');
+	gulp.start('build', 'watch', 'clear', 'serve');
 });

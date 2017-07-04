@@ -1,0 +1,92 @@
+// Layout Base Stylesheet
+// ========================================
+
+// Global Styles
+html,
+body {
+  background: $black-light;
+  margin: 0 auto;
+  width: 100%;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+body {
+
+  &.is-fixed {
+    @include position(absolute);
+    overflow: hidden;
+  }
+}
+
+// Background Colors
+@each $background-color, $styles in $background-colors {
+  $bg-color:  nth($styles, 1);
+
+  .background--#{$background-color} {
+    background-color: $bg-color;
+  }
+}
+
+// Center
+.center {
+
+  &__parent {
+    @include position(relative);
+  }
+
+  &__child--vert {
+    @include center($horizontal: false, $vertical: true);
+  }
+}
+
+// Clears + Resets
+.clear { clear: both; }
+.clearfix { @include clearfix; }
+
+@each $reset in $resets {
+  $position:  nth($reset, 1);
+  $zero:      nth($reset, 2);
+
+  .margin-reset--#{$position} {
+    margin-#{$position}: $zero !important;
+  }
+
+  .padding-reset--#{$position} {
+    padding-#{$position}: $zero !important;
+  }
+}
+
+.margin--reset   { margin:  0; }
+.padding--reeset { padding: 0; }
+
+// Spacers
+@each $spacer in $spacers {
+  $type:   nth($spacer, 1);
+  $value:  nth($spacer, 2);
+
+  .padding-bottom--#{$type} { padding-bottom: $value; }
+  .padding-top--#{$type}    { padding-top:    $value; }
+
+  .margin-bottom--#{$type} { margin-bottom: $value; }
+  .margin-left--#{$type}   { margin-left:   $value; }
+  .margin-right--#{$type}  { margin-right:  $value; }
+  .margin-top--#{$type}    { margin-top:    $value; }
+}
+
+// Hidden
+.hidden--sm {
+  display: none;
+}
+
+
+.hidden--md {
+  @include media($medium) {
+    display: none;
+  }
+}
+
+.hidden--lg {
+  @include media($large) {
+    display: none;
+  }
+}

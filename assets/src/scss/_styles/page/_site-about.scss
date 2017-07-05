@@ -20,8 +20,11 @@ $about-hero-image: url('../../../assets/dist/img/about-hero.jpg') no-repeat cent
   }
 }
 
-.about__hours {
+.about__content {
 
+  p{
+    text-align: justify;
+  }
 }
 
 .hours-table__mobile {

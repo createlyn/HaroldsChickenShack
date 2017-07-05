@@ -257,6 +257,9 @@ footer {
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%); }
 
+.about__content p {
+  text-align: justify; }
+
 .hours-table__mobile {
   margin: auto;
   text-transform: uppercase;

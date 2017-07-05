@@ -1,1 +1,1 @@
-echo "node_modules/\nbower_components/" >> .gitignore
+/node_modules/*/node-modules/

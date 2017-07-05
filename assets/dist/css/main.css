@@ -143,6 +143,10 @@ footer {
       width: 49.5%;
       display: inline-block; } }
 
+.email-signup h6, .email-signup input {
+  display: inline-block;
+  margin: 20px 5px; }
+
 .footer--social {
   padding: 20px; }
   .footer--social__item {
@@ -196,7 +200,11 @@ footer {
   .image-list__item {
     height: 150px;
     width: 150px;
-    background-color: #CA0000; }
+    background-color: #CA0000;
+    overflow: hidden; }
+  .image-list__image {
+    max-width: 150px;
+    max-height: 150px; }
 
 .blog__section {
   color: #FFFFFF;
@@ -210,10 +218,12 @@ footer {
   display: block; }
 
 .blog__preview-item {
-  margin-top: 40px; }
+  margin-top: 40px;
+  border-bottom: 1px solid #FFFFFF; }
   @media screen and (min-width: 720px) {
     .blog__preview-item {
-      display: inline-block; } }
+      display: inline-block;
+      border: none; } }
 
 .blog__image {
   display: none; }
@@ -906,6 +916,7 @@ h6 {
   color: #1C0728;
   line-height: 1.0;
   margin-bottom: 20px;
+  text-transform: uppercase;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased; }
 

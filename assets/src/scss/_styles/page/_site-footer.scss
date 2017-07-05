@@ -26,6 +26,14 @@ footer {
   }
 }
 
+.email-signup {
+
+  h6, input {
+    display: inline-block;
+    margin: $spacer-delta $spacer-hotel;
+  }
+}
+
 .footer--social {
   padding: $spacer-delta;
 

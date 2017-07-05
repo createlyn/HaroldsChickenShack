@@ -1,0 +1,10 @@
+
+// Button Standard
+@mixin link($color-value) {
+  @extend .text--bold;
+  @include font-type($primary-sans-serif, normal, 400);
+  @include s-hotel;
+  color: $color-value;
+  letter-spacing: $l-echo;
+  text-transform: $text-transform-uppercase;
+}

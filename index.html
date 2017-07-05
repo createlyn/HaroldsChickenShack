@@ -12,35 +12,54 @@
   </head>
   <body>
     <header class="site__header">
-      <!-- <div class="container">
-        <div class="logo"></div>
-        <nav>
-          <ul class="site-navigation">
-            <li class="site-navigation__item"><a href="#" class="link--primary">menu</a></li>
-            <li class="site-navigation__item"><a href="#" class="link--primary">our story</a></li>
-            <li class="site-navigation__item"><a href="#" class="link--primary">blog</a></li>
-            <li class="site-navigation__item"><a href="#" class="link--primary">contact us</a></li>
-          </ul>
-          <div class="site-navigation__item">
-              <a href="#" class="call-button">button</a>
+      <nav role="navigation" class="container">
+        <div class="row">
+          <div class="site-navigation__left">
+            <img src="assets/src/img/logo-mobile.png" alt="Harold's Chicken Shack Logo" class="mobile-navigation-logo">
+            <img src="assets/src/img/logo-horizontal.png" alt="Harold's Chicken Shack Logo" class="navigation-logo">
           </div>
-          <div class="nav__mobile-trigger">
-            <a href="#" class="">ham</a>
-          </div>
-        </nav>
-      </div> -->
-    </header>
 
+          <!-- mobile navigation -->
+            <div class="mobile-navigation__trigger">
+              <a href="#" class="site-navigation__link">
+                <img src="../assets/src/img/icons/icon-menu.svg" alt="menu-icon" class="mobile-navigation__trigger" />
+              </a>
+            </div>
+            <ul class="mobile-navigation__list text--center">
+              <li><a href="tel:+1800229933" class="background--purple text--white mobile-navigation__item">Call ahead!</a></li>
+              <li><a href="#" class="link--primary mobile-navigation__item">menu</a></li>
+              <li><a href="#" class="link--primary mobile-navigation__item">our story</a></li>
+              <li><a href="#" class="link--primary mobile-navigation__item">blog</a></li>
+              <li><a href="#" class="link--primary mobile-navigation__item">contact us</a></li>
+            </ul>
+
+
+          <!-- desktop nav -->
+          <div class="site-navigation__center">
+            <ul class="navigation__list">
+              <li class="navigation__item"><a href="#" class="link--primary navigation__link">menu</a></li>
+              <li class="navigation__item"><a href="#" class="link--primary navigation__link">our story</a></li>
+              <li class="navigation__item"><a href="#" class="link--primary navigation__link">blog</a></li>
+              <li class="navigation__item"><a href="#" class="link--primary navigation__link">contact us</a></li>
+            </ul>
+          </div>
+          <div class="site-navigation__right">
+            <div class="site-navigation__call">
+              <a href="tel:+1800229933" class="button--primary">Call ahead!</a>
+            </div>
+          </div>
+
+        </div>
+      </nav>
+    </header>
     <section class="page__section hero__image">
       <h1 class="text--center text--uppercase">home of the fried chicken king</h1>
     </section>
-
     <section class="page__section text--center columns-5__m offset-2__m">
       <h2>something about chicken</h2>
       <p>Sed ut feugiat ipsum. Fusce mattis sit amet orci at suscipit. Integer vitae ipsum non lorem fringilla rutrum. Curabitur in diam eget justo laoreet euismod. Integer consequat auctor metus et volutpat. Ut vitae nisi metus. Quisque luctus congue mattis.</p>
       <a href="#" class="button--secondary">view menu</a>
     </section>
-
     <section class="page__section image__section">
       <ul class="image-list">
         <li class="image-list__item"></li>
@@ -51,68 +70,71 @@
         <li class="image-list__item"></li>
       </ul>
     </section>
-
-    <section class="page__section blog__section">
+    <section class="page__section blog__section background--purple margin-bottom--reset">
       <header class="blog__header text--center">
         <h1>Talk Chicken</h1>
         <a href="#" class="button--secondary">View all blog posts</a>
       </header>
-      <ul class="blog__preview columns-4__s columns-9__m">
-        <li class="blog__preview-item columns-4__s columns-3__m"">
-          <div class="blog__image"></div>
-          <div class="blog__preview-content">
-            <h3>Blog title here</h3>
-            <p>Integer consequat auctor metus et volutpat. Ut vitae nisi metus. Quisque luctus congue mattis. Ut vitae nisi metus. Quisque luctus congue mattis.</p>
-            <a href="#" class="button--secondary">read more</a>
+      <div class="container">
+        <div class="row">
+          <ul class="blog__preview columns-4__s columns-9__m">
+            <li class="blog__preview-item columns-4__s columns-3__m"">
+              <div class="blog__image"></div>
+              <div class="blog__preview-content">
+                <h3>Blog title here</h3>
+                <p>Integer consequat auctor metus et volutpat. Ut vitae nisi metus. Quisque luctus congue mattis. Ut vitae nisi metus. Quisque luctus congue mattis.</p>
+                <a href="#" class="button--secondary">read more</a>
+              </div>
+            </li>
+            <li class="blog__preview-item columns-4__s columns-3__m">
+              <div class="blog__image"></div>
+              <div class="blog__preview-content">
+                <h3>Blog title here</h3>
+                <p>Integer consequat auctor metus et volutpat. Ut vitae nisi metus. Quisque luctus congue mattis.Ut vitae nisi metus. Quisque luctus congue mattis.</p>
+                <a href="#" class="button--secondary">read more</a>
+              </div>
+            </li>
+            <li class="blog__preview-item columns-4__s columns-3__m">
+              <div class="blog__image"></div>
+              <div class="blog__preview-content">
+                <h3>Blog title here</h3>
+                <p>Integer consequat auctor metus et volutpat. Ut vitae nisi metus. Quisque luctus congue mattis. Ut vitae nisi metus. Quisque luctus congue mattis.</p>
+                <a href="#" class="button--secondary">read more</a>
+              </div>
+            </li>
+          </ul>
           </div>
-        </li>
-        <li class="blog__preview-item columns-4__s columns-3__m">
-          <div class="blog__image"></div>
-          <div class="blog__preview-content">
-            <h3>Blog title here</h3>
-            <p>Integer consequat auctor metus et volutpat. Ut vitae nisi metus. Quisque luctus congue mattis.Ut vitae nisi metus. Quisque luctus congue mattis.</p>
-            <a href="#" class="button--secondary">read more</a>
+          <div class="row">
+            <a href="#" class="blog__view-more">view all > </a>
           </div>
-        </li>
-        <li class="blog__preview-item columns-4__s columns-3__m">
-          <div class="blog__image"></div>
-          <div class="blog__preview-content">
-            <h3>Blog title here</h3>
-            <p>Integer consequat auctor metus et volutpat. Ut vitae nisi metus. Quisque luctus congue mattis. Ut vitae nisi metus. Quisque luctus congue mattis.</p>
-            <a href="#" class="button--secondary">read more</a>
-          </div>
-        </li>
-      </ul>
-    </section>
-
-    <footer>
-      <div class="footer__container">
-        <div class="footer__connect text--center">
-          <h3>connect with us</h3>
-          <div class="footer__social">
-            <a href="#">facebook</a>
-            <a href="#">instagram</a>
-            <a href="#">twitter</a>
-            <a href="#">email</a>
-          </div>
-          <div class="email-signup">
-            <h6>join our email list</h6>
-            <input type="form" name="email">
-            <a href="#" class="button"></a>
-          </div>
-        </div>
-        <div class="footer__location text--center">
-          <div class="footer__logo"></div>
-          <p>harold’s chicken shack, Aurora <br>
-              3577 E. New York Street<br>
-              Suite #103, Aurora, IL 60504<br>
-                (630) 499-8393</p>
         </div>
       </div>
-
+    </section>
+    <footer>
+      <div class="footer__container">
+          <div class="footer__connect text--center">
+            <h3>connect with us</h3>
+            <div class="footer--social">
+              <a href="#" class="footer--social__item">facebook</a>
+              <a href="#" class="footer--social__item">instagram</a>
+              <a href="#" class="footer--social__item">twitter</a>
+              <a href="#" class="footer--social__item">email</a>
+            </div>
+            <div class="email-signup">
+              <h6>join our email list</h6>
+              <input type="form" name="email">
+              <a href="#" class="button"></a>
+            </div>
+          </div>
+          <div class="footer__location text--center">
+            <div class="footer__logo"></div>
+            <p>harold’s chicken shack, Aurora <br>
+                3577 E. New York Street<br>
+                Suite #103, Aurora, IL 60504<br>
+                  (630) 499-8393</p>
+          </div>
+      </div>
     </footer>
-
-
     <script src="/assets/dist/js/production.js" charset="utf-8"></script>
   </body>
 </html>

@@ -185,9 +185,6 @@ footer {
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%); }
 
-.image__section {
-  background-color: #71CCC1; }
-
 .image-list {
   display: -ms-flexbox;
   display: flex;
@@ -913,7 +910,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "museo-sans-condensed", "Helvetica", sans-serif;
+  font-family: "museo-sans", "Helvetica", sans-serif;
   font-style: normal;
   font-weight: 700;
   color: #1C0728;
@@ -926,6 +923,7 @@ h6 {
 h1 {
   font-size: 36px;
   color: #FFFFFF;
+  font-weight: 900;
   text-shadow: 2px 2px 10px #000000; }
 
 h2 {

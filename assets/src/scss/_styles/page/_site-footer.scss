@@ -1,0 +1,60 @@
+// footer
+
+// Variables
+$footer-logo: url('../../../assets/src/img/logo-symbol.png');
+
+
+// Structure
+footer {
+  clear: both;
+}
+
+.footer__container {
+}
+
+
+.footer__connect {
+  background-color: $orange-base;
+  padding: $spacer-alpha 0;
+  top: 0;
+  vertical-align: top;
+
+
+  @include media($medium){
+    width: 49.5%;
+    display: inline-block;
+  }
+}
+
+.footer--social {
+  padding: $spacer-delta;
+
+  &__item {
+    padding: $spacer-hotel $spacer-delta;
+  }
+
+}
+
+.footer__location {
+  background-color: $white-base;
+  width: 100%;
+  top: 0;
+  vertical-align: top;
+  margin: $spacer-charlie auto;
+  padding: $spacer-charlie 0;
+
+  @include media($medium){
+    display: inline-block;
+    margin: auto;
+    padding: 0;
+    width: 50%;
+  }
+}
+
+.footer__logo {
+  // width: 80%;
+  max-height: 100px;
+  margin: $spacer-charlie auto $spacer-echo;
+}
+
+

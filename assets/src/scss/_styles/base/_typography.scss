@@ -55,7 +55,7 @@ h6 { @include s-foxtrot; }
 
 // Base Body Copy
 p {
-  @include font-type($primary-font-condensed, normal, 400);
+  @include font-type($secondary-font, normal, 400);
   @include s-golf;
   color: $purple-dark;
   line-height: 1.5;

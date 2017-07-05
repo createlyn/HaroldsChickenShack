@@ -1,0 +1,65 @@
+// About Stylesheet
+
+// Variables
+$about-hero-image: url('../../../assets/dist/img/about-hero.jpg') no-repeat center 50%;
+
+
+// Structure
+.about-hero__image {
+  background: $about-hero-image;
+  background-size: cover;
+  height: 200px;
+  position: relative;
+
+  @include media($medium) {
+    height: 250px;
+  }
+
+  h1 {
+    @include center;
+  }
+}
+
+.about__hours {
+
+}
+
+.hours-table__mobile {
+  margin: auto;
+  text-transform: $text-transform-uppercase;
+  vertical-align: middle;
+
+  tr {
+    border: 2px solid $green-base;
+    background-color: $white-base;
+  }
+
+  td {
+    padding: $spacer-echo;
+    border: 2px solid $purple-dark;
+  }
+
+  @include media($medium){
+    display: none;
+  }
+}
+
+.hours-table__desktop {
+  display: none;
+  text-transform: $text-transform-uppercase;
+
+  tr {
+    border: 2px solid $green-base;
+    background-color: $white-base;
+  }
+
+  td {
+    padding: $spacer-echo;
+    border: 2px solid $purple-dark;
+  }
+
+   @include media($medium){
+    display: inline-block;
+    margin: auto;
+  }
+}

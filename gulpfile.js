@@ -49,7 +49,7 @@ gulp.task('styles', function() {
 			includePaths: ['bower_components']
 		}) )
 		.pipe(prefix("last 2 versions"))
-		// .pipe(minifyCSS())
+		.pipe(minifyCSS())
 		.pipe(gulp.dest('assets/dist/css'))
 		.pipe(size())
 		.pipe(notify("SASS finished compiling"))
